@@ -1,7 +1,7 @@
 # Amo
 My social app source code
 
-![image](https://drive.google.com/open?id=1z4qE-kSn8nWqZNYAA8vj7-P8ZOi_vBOu)
+![image](https://github.com/MouChiaHung/Amo/blob/master/IMG/app.png)
 
 App includes:
  - modern user interface

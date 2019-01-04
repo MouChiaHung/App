@@ -1,0 +1,4 @@
+me.yokeyword.fragmentation_swipeback
+int drawable shadow_bottom 0x7f090001
+int drawable shadow_left 0x7f090002
+int drawable shadow_right 0x7f090003

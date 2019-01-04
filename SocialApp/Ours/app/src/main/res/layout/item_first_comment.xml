@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:toolNS="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/intrinsic_padding"
+    android:paddingRight="@dimen/intrinsic_padding"
+    android:paddingLeft="@dimen/intrinsic_padding"
+    android:paddingTop="@dimen/intrinsic_padding">
+
+    <ImageView
+        android:id="@+id/commentProfilePhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_stub" />
+
+    <LinearLayout
+        android:id="@+id/commentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/intrinsic_padding"
+        android:paddingLeft="@dimen/intrinsic_padding"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/commentProfilePhoto">
+
+        <LinearLayout
+            android:id="@+id/commentContentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/commentProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoLink="all"
+                toolNS:text="留言者"/>
+                <!--android:textAppearance="@style/TextAppearance.Second.Light" /-->
+            <TextView
+                android:id="@+id/commentProfileNameColon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                toolNS:text=":"/>
+            <!--android:textAppearance="@style/TextAppearance.Second.Light" /-->
+            <TextView
+                android:id="@+id/commentContent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoLink="web"
+                toolNS:text="留言內容"/>
+                <!--android:textAppearance="@style/TextAppearance.Second" /-->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentPositionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end|bottom"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/commentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                toolNS:text="留言時間"/>
+            <TextView
+                android:id="@+id/commentMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/commentDate"
+                android:layout_marginLeft="12dp"
+                toolNS:text="距離"/>
+            <!--android:textAppearance="@style/TextAppearance.Second.Light" /-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

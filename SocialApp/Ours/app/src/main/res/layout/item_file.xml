@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/background_light"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="10dp"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:id="@+id/photoItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <android.widget.ImageButton
+            android:id="@+id/photoRemove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/remove_item"
+            android:src="@android:drawable/ic_menu_delete"/>
+        <ImageView
+            android:id="@+id/photoItem"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_below="@+id/photoItem"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:text="xxx"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_below="@+id/photoItem"
+            android:layout_toEndOf="@+id/tvName"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:text="..." />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

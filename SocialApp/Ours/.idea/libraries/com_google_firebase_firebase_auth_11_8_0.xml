@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.google.firebase:firebase-auth-11.8.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/43057361c6ee18d7c8de460a3449d01e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.8.0.aar/43057361c6ee18d7c8de460a3449d01e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../FirebaseSDK/firebase-admin-java-master/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../FirebaseSDK/firebase-admin-java-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ours</string>
+    <string name="action_settings">Settings</string>
+    <string name="account">account</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="permissions_camera_capture_not_granted">唉唷相機不給用</string>
+    <string name="permissions_external_storage_not_granted">唉唷記憶卡不給用</string>
+    <string name="crop_image_fail">crop image failed</string>
+    <string name="hint_title">標題</string>
+    <string name="hint_content">內容</string>
+    <string name="hint_count">數量</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_card"
+        android:title="編輯貼文"
+        app:showAsAction="always"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/remove_card"
+        android:title="刪除貼文"
+        app:showAsAction="always"
+        android:visible="true" />
+
+</menu>

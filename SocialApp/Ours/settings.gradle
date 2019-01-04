@@ -1,0 +1,1 @@
+include ':app', ':eventbus_activity_scope', ':fragmentation', ':fragmentation_core', ':fragmentation_swipeback', ':logger', ':cropper'

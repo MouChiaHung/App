@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/first_card_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/firstAddCardScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/firstAddCardContainer"
+        android:layout_alignParentTop="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/firstAddCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/firstAddCardAppBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/firstAddCardToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/first_card_post_toolbar"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+                app:titleTextAppearance="@style/Toolbar_TextAppearance_White">
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/firstAddCardToolbarContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_below="@+id/firstAddCardImageContainer">
+                    <android.widget.ImageButton
+                        android:id="@+id/firstAddCardToolbarAddBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/add_pic"
+                        android:src="@android:drawable/ic_menu_add"/>
+
+                    <android.widget.ImageButton
+                        android:id="@+id/firstAddCardToolbarPostBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/intrinsic_padding"
+                        android:src="@android:drawable/ic_menu_send"
+                        android:background="@drawable/post_card"
+                        android:layout_toRightOf="@id/firstAddCardToolbarAddBtn"/>
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+        <RelativeLayout
+            android:id="@+id/firstAddCardPostContainer"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/intrinsic_padding"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/firstAddCardPostTitleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/intrinsic_padding"
+                android:layout_alignParentTop="true">
+
+                <EditText
+                    android:id="@+id/firstAddCardPostTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/intrinsic_padding"
+                    android:layout_marginLeft="@dimen/intrinsic_padding"
+                    android:hint="@string/hint_title"
+                    android:inputType="textMultiLine" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstAddCardPostContentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstAddCardPostTitleContainer">
+
+                <EditText
+                    android:id="@+id/firstAddCardPostContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginRight="@dimen/intrinsic_padding"
+                    android:layout_marginLeft="@dimen/intrinsic_padding"
+                    android:hint="@string/hint_content"
+                    android:inputType="textMultiLine" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/firstAddCardPostImageContainer"
+                android:layout_width="match_parent"
+                android:background="@color/first_photo_item_sideline"
+                android:layout_height="500dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/firstAddCardPostContentContainer">
+                <RelativeLayout
+                    android:id="@+id/firstAddCardPostImageRCVContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/firstAddCardPostImageRCV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+                <ProgressBar
+                    android:id="@+id/firstAddCardPostImageProgressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/firstAddCardSnackBarBtn"
+            android:layout_gravity="right"
+            android:background="@color/cardview_light_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

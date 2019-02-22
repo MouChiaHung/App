@@ -1,4 +1,4 @@
-# An app using Firebase and sharing text and photos for users
+# An Android application using Firebase
 ![image](https://github.com/MouChiaHung/App/blob/master/IMG/0bd5a16ca80c.gif)
 
 App includes:
